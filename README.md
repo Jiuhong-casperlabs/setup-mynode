@@ -78,4 +78,4 @@ sudo /etc/casper/node_util.py start
 
 
 refer to 
-https://github.com/casper-network/casper-node/wiki/Mainnet-Node-Installation-Instructions#install-casper-node-launcher-casper-client-and-jq
+https://github.com/casper-network/casper-node/wiki/Mainnet-Node-Installation-Instructions
