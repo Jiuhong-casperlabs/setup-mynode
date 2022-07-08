@@ -53,7 +53,7 @@ Copy your conf to network_configs
 
 ```
 cd /etc/casper/network_configs
-sudo -u casper curl -JLO <your server>/<working path>/mynetwork.conf
+sudo -u casper curl -JLO <your server>/<working path>/<your network name>.conf
 ```
 
 Install all protocols
