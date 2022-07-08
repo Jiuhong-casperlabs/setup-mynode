@@ -56,7 +56,10 @@ cd /etc/casper/network_configs
 sudo -u casper curl -JLO <your server>/<working path>/<your network name>.conf
 ```
 
-Install all protocols
+Install all protocols 
+
+For launching new network there should be only 1 protocol like 1_0_0
+
 ```
 sudo -u casper /etc/casper/node_util.py stage_protocols <your network name>.conf
 ```
