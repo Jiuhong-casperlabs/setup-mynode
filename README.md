@@ -1,9 +1,8 @@
 ## STEP1  Customize your protocols and host them on your server
 
 
-```
 https://github.com/casper-network/docs/blob/dev/source/docs/casper/workflow/staging-files-for-new-network.md
-```
+
 
 You have to start your server before next step!
 
