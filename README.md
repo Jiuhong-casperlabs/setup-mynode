@@ -1,19 +1,28 @@
-install
+## STEP1  Customize your protocols and host them on your server
+
+
 ```
+https://github.com/casper-network/docs/blob/dev/source/docs/casper/workflow/staging-files-for-new-network.md
+```
+
+You have to start your server before next step!
+
+Example for completed server: 
+
+```
+git clone https://github.com/Jiuhong-casperlabs/setup-mynode.git
+
+cd setup-mynode
+
 npm i
-```
 
-start
-
-```
 npm run start
 ```
 
 
-hosting files are [here](public)
 
 ---
-## Install instruction
+## STEP2 Install private network node
 
 Clean up
 
@@ -41,13 +50,6 @@ Install casper-node-launcher, casper-client, and jq
 ```
 sudo apt install -y casper-client casper-node-launcher jq
 ```
-
-Customize your protocols and host them on your server
-
-```
-https://github.com/casper-network/docs/pull/557/files
-```
-for example -> [here](public)
 
 Copy your conf to network_configs
 
