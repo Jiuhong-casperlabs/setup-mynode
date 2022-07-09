@@ -6,8 +6,6 @@ https://github.com/casper-network/docs/blob/dev/source/docs/casper/workflow/stag
 
 <mark>You have to start your server before next step! </mark>
 
-==highlight==
-
 Example for completed server: 
 
 ```
