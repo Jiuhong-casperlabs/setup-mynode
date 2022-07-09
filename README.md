@@ -4,7 +4,7 @@
 https://github.com/casper-network/docs/blob/dev/source/docs/casper/workflow/staging-files-for-new-network.md
 
 
-**You have to start your server before next step! **
+### **You have to start your server before next step!**
 
 Example for completed server: 
 
