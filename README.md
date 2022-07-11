@@ -46,7 +46,18 @@ npm i
 npm run start
 ```
 
+Check if the server starts successfully:
 
+Issue this command 
+```
+curl -s http://<domain name>/<network name>/protocol_versions
+```
+for example, `curl -s http://localhost:3000/mynetwork/protocol_versions`
+
+output should be
+```
+1_0_0
+```
 
 ---
 ## STEP2 Install private network node
