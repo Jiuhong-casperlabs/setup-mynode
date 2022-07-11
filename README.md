@@ -4,6 +4,8 @@
 https://github.com/casper-network/docs/blob/dev/source/docs/casper/workflow/staging-files-for-new-network.md
 
 The file structure is like this 
+
+*`mynetwork` is an example for network name, please replace with your network name.*
 ```
 └── mynetwork
     ├── 1_0_0
