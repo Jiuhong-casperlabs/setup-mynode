@@ -46,7 +46,7 @@ npm i
 npm run start
 ```
 
-Check if the server starts successfully:
+### Check if the server starts successfully:
 
 Issue this command 
 ```
