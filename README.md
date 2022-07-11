@@ -5,9 +5,6 @@ https://github.com/casper-network/docs/blob/dev/source/docs/casper/workflow/stag
 
 The file structure is like this 
 
-*`mynetwork` is an example for network name, please replace with your network name.*
-
-*`bin.tar.gz` and `config.tar.gz` are from https://github.com/casper-network/casper-node/releases/tag/private-1.4.6*
 ```
 └── mynetwork
     ├── 1_0_0
@@ -15,6 +12,24 @@ The file structure is like this
     │   └── config.tar.gz             -> configuration files you have to customize. unzip -> customize -> zip
     ├── mynetwork.conf                -> the file to be copied in `Copy your conf to network_configs` of next step
     └── protocol_versions             -> version of your node. For new launch network, there is only 1 version.
+```
+*notes:*
+
+*`mynetwork` is an example for network name, please replace with your network name.*
+
+*`bin.tar.gz` and `config.tar.gz` are from https://github.com/casper-network/casper-node/releases/tag/private-1.4.6*
+
+*mynetwork.conf*
+
+```
+SOURCE_URL= <your domain name of this server>
+NETWORK_NAME=mynetwork
+```
+
+*protocol_versions*
+
+```
+1_0_0
 ```
 
 ### **You have to start your server before next step!**
