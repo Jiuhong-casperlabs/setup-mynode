@@ -6,6 +6,8 @@ https://github.com/casper-network/docs/blob/dev/source/docs/casper/workflow/stag
 The file structure is like this 
 
 *`mynetwork` is an example for network name, please replace with your network name.*
+
+*`bin.tar.gz` and `config.tar.gz` are from https://github.com/casper-network/casper-node/releases/tag/private-1.4.6*
 ```
 └── mynetwork
     ├── 1_0_0
