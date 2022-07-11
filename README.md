@@ -12,7 +12,7 @@ The file structure is like this
     │   ├── bin.tar.gz                -> source code of casper-node
     │   └── config.tar.gz             -> configuration files you have to customize. unzip -> customize -> zip
     ├── mynetwork.conf                -> the file to be copied in `Copy your conf to network_configs` of next step
-    └── protocol_versions             -> version of your node
+    └── protocol_versions             -> version of your node. For new launch network, there is only 1 version.
 ```
 
 ### **You have to start your server before next step!**
