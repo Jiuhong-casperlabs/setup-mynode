@@ -3,6 +3,15 @@
 
 https://github.com/casper-network/docs/blob/dev/source/docs/casper/workflow/staging-files-for-new-network.md
 
+The file structure is like this 
+```
+└── mynetwork
+    ├── 1_0_0
+    │   ├── bin.tar.gz                -> source code of casper-node
+    │   └── config.tar.gz             -> configuration files you have to customize. unzip -> customize -> zip
+    ├── mynetwork.conf                -> the file to be copied in `Copy your conf to network_configs` of next step
+    └── protocol_versions             -> version of your node
+```
 
 ### **You have to start your server before next step!**
 
