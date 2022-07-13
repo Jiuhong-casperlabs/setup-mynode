@@ -12,6 +12,7 @@ https://docs.casperlabs.io/workflow/setup-private-network/
 public_key = "0152836c51eac04205bb7febe9d92da50758178b0bf388bd03e1da13147b99e2c5"
 
 -> It is the public key in the path `/etc/casper/validator_keys` on validators' node.
+note: `sudo -u casper casper-client keygen /etc/casper/validator_keys`
 
 [[administrators]]
 public_key = "0152836c51eac04205bb7febe9d92da50758178b0bf388bd03e1da13147b99e2c5"
@@ -47,6 +48,7 @@ administrators = ["ADMIN_PUBLIC_KEY"]
 [network]
 known_addresses = ['16.162.124.124:35000','18.163.179.161:35000']
 -> this is the genesis validators's ip address which must be online before network launching.
+note `curl https://ipinfo.io/ip`
 ```
 
 The file structure is like this 
