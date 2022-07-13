@@ -5,6 +5,50 @@ https://github.com/casper-network/docs/blob/dev/source/docs/casper/workflow/stag
 
 https://docs.casperlabs.io/workflow/setup-private-network/
 
+`accounts.toml`
+
+```
+[[accounts]]
+public_key = "0152836c51eac04205bb7febe9d92da50758178b0bf388bd03e1da13147b99e2c5"
+
+-> It is the public key in the path `/etc/casper/validator_keys` on validators' node.
+
+[[administrators]]
+public_key = "0152836c51eac04205bb7febe9d92da50758178b0bf388bd03e1da13147b99e2c5"
+
+-> It is the administrator's public key.
+```
+
+`chainspec.toml`
+
+```
+[protocol]
+activation_point = '2022-07-12T12:05:00Z'
+-> this is the time the network is to live.
+
+[network]
+name = 'mynetwork'
+-> this is network name.
+
+[core]
+allow_unrestricted_transfers = false
+compute_rewards = false
+allow_auction_bids = false
+refund_handling = { type = "refund", refund_ratio = [1, 1] }
+fee_handling = { type = "accumulate" }
+administrators = ["ADMIN_PUBLIC_KEY"]
+-> https://docs.casperlabs.io/workflow/setup-private-network/
+
+```
+
+`config-example.toml`
+
+```
+[network]
+known_addresses = ['16.162.124.124:35000','18.163.179.161:35000']
+-> this is the genesis validators's ip address which must be online before network launching.
+```
+
 The file structure is like this 
 
 ```
