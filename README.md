@@ -3,6 +3,8 @@
 
 https://github.com/casper-network/docs/blob/dev/source/docs/casper/workflow/staging-files-for-new-network.md
 
+https://docs.casperlabs.io/workflow/setup-private-network/
+
 The file structure is like this 
 
 ```
