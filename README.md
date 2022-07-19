@@ -25,7 +25,7 @@ public_key = "0152836c51eac04205bb7febe9d92da50758178b0bf388bd03e1da13147b99e2c5
 ```
 [protocol]
 version = '1.0.0'
--> This match protocol version
+-> This matches protocol version
 activation_point = '2022-07-12T12:05:00Z'
 -> this is the time the network is to live.
 
@@ -172,3 +172,5 @@ sudo /etc/casper/node_util.py start
 
 refer to 
 https://github.com/casper-network/casper-node/wiki/Mainnet-Node-Installation-Instructions
+
+For upgrade see [upgrade](UPGRADE.md)
