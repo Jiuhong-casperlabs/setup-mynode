@@ -24,6 +24,8 @@ public_key = "0152836c51eac04205bb7febe9d92da50758178b0bf388bd03e1da13147b99e2c5
 
 ```
 [protocol]
+version = '1.0.0'
+-> This match protocol version
 activation_point = '2022-07-12T12:05:00Z'
 -> this is the time the network is to live.
 
@@ -100,7 +102,7 @@ Issue this command
 ```
 curl -s http://<domain name>/<network name>/protocol_versions
 ```
-for example, `curl -s http://localhost:3000/mynetwork/protocol_versions`
+for example, `curl -s http://testprivatenet.herokuapp.com/mynetwork/protocol_versions`
 
 output should be
 ```
@@ -141,7 +143,7 @@ Copy your conf to network_configs
 
 ```
 cd /etc/casper/network_configs
-sudo -u casper curl -JLO <your server>/<working path>/<your network name>.conf
+sudo -u casper curl -JLO testprivatenet.herokuapp.com/mynetwork/mynetwork.conf
 ```
 
 Install all protocols 
@@ -149,7 +151,7 @@ Install all protocols
 For launching new network there should be only 1 protocol like 1_0_0
 
 ```
-sudo -u casper /etc/casper/node_util.py stage_protocols <your network name>.conf
+sudo -u casper /etc/casper/node_util.py stage_protocols mynetwork.conf
 ```
 
 
