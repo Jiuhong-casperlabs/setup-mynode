@@ -8,8 +8,8 @@ sudo chmod 755 /usr/bin/global-state-update-gen
 
 sudo -u casper global-state-update-gen generate-admins  \
 --data-dir /var/lib/casper/casper-node/mynetwork   \
---state-hash 48d0eb2b6f81f9531bb57bbc28453c250e4829a9e6f9a4f6a86114ab4fed2145   \
---admin 019e2dc0c89d46b4471bbc5583406f25ff1574d3903de9c3b147ef39a046284784,1000000000000001>/tmp/global_state.toml
+--state-hash e64c6191303cdf31fadc6cfd327855977241ac9a0d1726949fbb7dd1de593c0e   \
+--admin 019e2dc0c89d46b4471bbc5583406f25ff1574d3903de9c3b147ef39a046284784,1000000000000001>/tmp/mytest.toml
 ```
 
 
