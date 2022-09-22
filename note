@@ -4,3 +4,5 @@ cd /etc/casper/network_configs
 sudo -u casper curl -JLO localhost:3000/mynetwork/mynetwork.conf
 
 sudo -u casper /etc/casper/node_util.py stage_protocols mynetwork.conf
+
+hello from master
