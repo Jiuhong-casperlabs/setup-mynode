@@ -21,12 +21,14 @@ sudo apt install -y casper-client casper-node-launcher jq
 ```
 ## Install all protocols
 
+*replace serverdomain with your domain name*
+
 *replace mynetworkname with your network name*
 
 *replace mynetwork.conf with your conf name*
 ```
 cd /etc/casper/network_configs
-sudo -u casper curl -JLO mypn.herokuapp.com/mynetworkname/mynetwork.conf
+sudo -u casper curl -JLO serverdomain/mynetworkname/mynetwork.conf
 sudo -u casper /etc/casper/node_util.py stage_protocols mynetwork.conf
 ```
 ## Validator Keys
