@@ -36,6 +36,30 @@ If you do not have keys, you can create them
 ```
 sudo -u casper casper-client keygen /etc/casper/validator_keys
 ```
+
+## CA certificates 
+
+https://docs.casperlabs.io/workflow/setup-private-network/#network-access-control
+
+For example:
+config.toml
+```
+[network.identity]
+tls_certificate = "/etc/casper/keys/node_1_cert.pem"
+secret_key = "/etc/casper/keys/node_1.pem"
+ca_certificate = "/etc/casper/keys/ca_cert.pem"
+```
+The certificates accessrights should be like this:
+```
+-rw-rw-r-- 1 casper casper 891 Oct 19 05:45 ca_cert.pem
+-rw------- 1 casper casper 436 Oct 19 05:46 node_1.pem
+-rw-rw-r-- 1 casper casper 774 Oct 19 05:47 node_1_cert.pem
+```
+The accessrights for path should be like this
+```
+drwxr-xr-x 7 casper casper 4096 Oct 21 02:47 keys
+```
+
 ## Get a trusted hash
 
 *replace 16.162.124.124 with your validator ip address*
