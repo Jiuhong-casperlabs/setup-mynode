@@ -25,7 +25,7 @@ Step3:
 
 Step4: 
 
-.Issue the following command on one node and copy it to the other nodes. This file should be exactly the same on each node.
+.Issue the following command on one node and put it on xx/public/mynetwork/1_0_1/config.tar.gz. This file should be exactly the same on each node.
 
 For example:
 ```
