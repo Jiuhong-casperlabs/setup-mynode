@@ -41,21 +41,23 @@ sudo ./global-state-update-gen validators \
 note:
 
 ```
--s : the state-root-hash of era n-1
+-s : the state-root-hash of last block in era n-1
 -v : all the validators in era n
 ```
 
-Location: put it the same location with the staged files.
+Location: put global_state.toml in the same location with the staged files.
 
 For example:
 ```
-ubuntu@worker1:/etc/casper/1_0_1$ ls -l
-total 52
--rw-r--r-- 1 casper casper   904 Aug 30 12:54 accounts.toml
--rw-r--r-- 1 casper casper 11492 Aug 30 14:14 chainspec.toml
--rw-r--r-- 1 casper casper 12818 Aug 30 12:54 config-example.toml
--rw-rw-r-- 1 casper casper 12820 Aug 30 14:33 config.toml
--rw-rw-r-- 1 casper casper   734 Aug 30 14:37 global_state.toml
+└── mynetwork
+    ├── 1_0_0
+    │   ├── bin.tar.gz
+    │   └── config.tar.gz
+    ├── 1_0_1
+    │   ├── bin.tar.gz
+    │   └── config.tar.gz    -> here
+    ├── mynetwork.conf
+    └── protocol_versions
 ```
 
 Step5:
