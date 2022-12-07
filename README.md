@@ -102,7 +102,7 @@ Issue this command
 ```
 curl -s http://<domain name>/<network name>/protocol_versions
 ```
-for example, `curl -s http://testprivatenet.herokuapp.com/mynetwork/protocol_versions`
+for example, `curl -s http://mypn.herokuapp.com/mynetwork/protocol_versions`
 
 output should be
 ```
@@ -143,7 +143,7 @@ Copy your conf to network_configs
 
 ```
 cd /etc/casper/network_configs
-sudo -u casper curl -JLO testprivatenet.herokuapp.com/mynetwork/mynetwork.conf
+sudo -u casper curl -JLO mypn.herokuapp.com/mynetwork/mynetwork.conf
 ```
 
 Install all protocols 
